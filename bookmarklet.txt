@@ -1,1 +1,1 @@
-javascript:(function () {var a = document.createElement('script');a.src = 'https://rawcdn.githack.com/sunflower4166/Avo/a2f3b58a715d139ee966ec4755175d751aeedcbf/avo.js';document.body.appendChild(a);}())
+javascript:(function () {var a = document.createElement('script');a.src = 'https://cdn.jsdelivr.net/gh/sunflower4166/Avo@main/avo.js';document.body.appendChild(a);}())
