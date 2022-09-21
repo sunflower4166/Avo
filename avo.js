@@ -42,6 +42,13 @@ console.setAttribute("class", "avoconsole")
 console.setAttribute("onclick", "avogoconsole()")
 navbar.appendChild(console)
 
+// Games
+var console = document.createElement("button")
+console.innerText = "Games"
+console.setAttribute("class", "avoconsole")
+console.setAttribute("onclick", "avogoconsole()")
+navbar.appendChild(console)
+
 // Close Nav
 var closebtn = document.createElement("button")
 closebtn.innerText = "X"
