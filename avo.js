@@ -139,7 +139,7 @@ thestyle.innerText += ".avoclosebtn:hover {background: #1c1c1c;}"
 // .active
 thestyle.innerText += ".avoactive {background: blue; color: white;}"
 
-thestyle.innerText += ".avoactive:hover {background: blue;}"
+thestyle.innerText += ".avoactive:hover {background: orange;}"
 
 // #loginput
 thestyle.innerText += "#avologinput {outline: none; border: none; width: 100%; font-size: 15px;background:black;color:white;}"
