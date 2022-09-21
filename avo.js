@@ -35,16 +35,17 @@ elements.setAttribute("class", "avoelements avoactive")
 elements.setAttribute("onclick", "avogoelements()")
 navbar.appendChild(elements)
 
+
+// Elements Nav
+var elements = document.createElement("button")
+elements.innerText = "Elements"
+elements.setAttribute("class", "avoelements avoactive")
+elements.setAttribute("onclick", "avogoelements()")
+navbar.appendChild(elements)
+
 // Console Nav
 var console = document.createElement("button")
 console.innerText = "Console"
-console.setAttribute("class", "avoconsole")
-console.setAttribute("onclick", "avogoconsole()")
-navbar.appendChild(console)
-
-// Games
-var console = document.createElement("button")
-console.innerText = "Games"
 console.setAttribute("class", "avoconsole")
 console.setAttribute("onclick", "avogoconsole()")
 navbar.appendChild(console)
@@ -111,7 +112,12 @@ thestyle.innerText += ".avodevtools {position: fixed; right: 8px; top: 8px; bott
 // .elements
 thestyle.innerText += ".avoelements {cursor: pointer; outline: none; background: transparent; color: #aaa; font-size: 20px; border: 2px solid blue; margin: 0; margin-top: 10px; border-right: none; border-left: none;}"
 
-thestyle.innerText += ".avoelements:hover {background: #1c1c1c;}"
+thestyle.innerText += ".avoelements:hover {background: orange;}"
+
+// .games
+thestyle.innerText += ".games {cursor: pointer; outline: none; background: transparent; color: #aaa; font-size: 20px; border: 2px solid blue; margin: 0; margin-top: 10px; border-right: none; border-left: none;}"
+
+thestyle.innerText += ".games:hover {background: orange;}"
 
 // .thecode
 thestyle.innerText += ".avothecode {border: 1px solid white; margin: 5px; margin-top: 10px; border-radius: 2.5px; padding: 5px; overflow: scroll; text-align: left; height: 90%;}"
