@@ -35,13 +35,12 @@ elements.setAttribute("class", "avoelements avoactive")
 elements.setAttribute("onclick", "avogoelements()")
 navbar.appendChild(elements)
 
-
-// Elements Nav
-var elements = document.createElement("button")
-elements.innerText = "Elements"
-elements.setAttribute("class", "avoelements avoactive")
-elements.setAttribute("onclick", "avogoelements()")
-navbar.appendChild(elements)
+// More
+var more = document.createElement("button")
+more.innerText = "More"
+more.setAttribute("class", "more")
+more.setAttribute("onclick", "moremore()")
+navbar.appendChild(more)
 
 // Console Nav
 var console = document.createElement("button")
@@ -112,12 +111,9 @@ thestyle.innerText += ".avodevtools {position: fixed; right: 8px; top: 8px; bott
 // .elements
 thestyle.innerText += ".avoelements {cursor: pointer; outline: none; background: transparent; color: #aaa; font-size: 20px; border: 2px solid blue; margin: 0; margin-top: 10px; border-right: none; border-left: none;}"
 
-thestyle.innerText += ".avoelements:hover {background: orange;}"
+thestyle.innerText += ".avoelements:hover {background: blue;}"
 
-// .games
-thestyle.innerText += ".games {cursor: pointer; outline: none; background: transparent; color: #aaa; font-size: 20px; border: 2px solid blue; margin: 0; margin-top: 10px; border-right: none; border-left: none;}"
 
-thestyle.innerText += ".games:hover {background: orange;}"
 
 // .thecode
 thestyle.innerText += ".avothecode {border: 1px solid white; margin: 5px; margin-top: 10px; border-radius: 2.5px; padding: 5px; overflow: scroll; text-align: left; height: 90%;}"
@@ -137,10 +133,14 @@ thestyle.innerText += ".avoconsole {cursor: pointer; outline: none; background: 
 
 thestyle.innerText += ".avoconsole:hover {background: #1c1c1c;}"
 
-// .closebtn
-thestyle.innerText += ".avoclosebtn {cursor: pointer; outline: none; background: transparent; color: #aaa; font-size: 20px; border: 2px solid blue; border-radius: 10px; margin-right: 10px; margin-top: 10px; float: right;}"
+// .more
+thestyle.innerText += ".more {cursor: pointer; outline: none; background: transparent; color: #aaa; font-size: 20px; border: 2px solid blue; margin: 0; margin-top: 10px; border-right: none; border-left: none;}"
 
-thestyle.innerText += ".avoclosebtn:hover {background: orange;}"
+thestyle.innerText += ".more:hover {background: blue;}"
+// .closebtn
+thestyle.innerText += ".avoclosebtn {cursor: pointer; outline: none; background: transparent; color: #aaa; font-size: 20px; border: 2.5px solid blue; border-radius: 10px; margin-right: 10px; margin-top: 10px; float: right;}"
+
+thestyle.innerText += ".avoclosebtn:hover {background: red;}"
 
 // .active
 thestyle.innerText += ".avoactive {background: blue; color: white;}"
@@ -200,6 +200,9 @@ thescript.innerText += 'function avogoconsole() {var logs = document.getElementB
 
 // Function Go Elements
 thescript.innerText += 'function avogoelements() {var logs = document.getElementById("avologs"); var loginput2 = document.getElementsByClassName("avologinput2")[0]; var thecode = document.getElementsByClassName("avothecode")[0]; logs.style.display = "none"; loginput2.style.display = "none"; thecode.style.display = "inherit"; document.getElementById("avologinput").focus(); var elements = document.getElementsByClassName("avoelements")[0]; var console = document.getElementsByClassName("avoconsole")[0]; elements.classList.add("avoactive"); console.classList.remove("avoactive");}'
+
+// Function Go MORE
+thescript.innerText += 'function moremore() {var logs = document.getElementById("avologs"); elements.classList.add("avoactive"); console.classList.remove("avoactive");}'
 
 // Function closedevtools
 thescript.innerText += 'function avoclosedevtools() {var devtools = document.getElementById("avodevtools"); document.body.removeChild(devtools);var devtools = document.getElementById("avostyle"); document.body.removeChild(devtools);var devtools = document.getElementById("avoscript"); document.body.removeChild(devtools)}'
