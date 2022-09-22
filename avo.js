@@ -138,7 +138,7 @@ thestyle.innerText += ".avoconsole {cursor: pointer; outline: none; background: 
 thestyle.innerText += ".avoconsole:hover {background: #1c1c1c;}"
 
 // .closebtn
-thestyle.innerText += ".avoclosebtn {cursor: pointer; outline: none; background: transparent; color: #aaa; font-size: 20px; border: 2px solid blue; border-radius: 2.5px; margin-right: 10px; margin-top: 10px; float: right;}"
+thestyle.innerText += ".avoclosebtn {cursor: pointer; outline: none; background: transparent; color: #aaa; font-size: 20px; border: 2px solid blue; border-radius: 10px; margin-right: 10px; margin-top: 10px; float: right;}"
 
 thestyle.innerText += ".avoclosebtn:hover {background: orange;}"
 
